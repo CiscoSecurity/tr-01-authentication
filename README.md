@@ -2,15 +2,15 @@
 
 ### Threat Response Authentication:
 
-These scripts are the basics required to authenticate to the Threat Response APIs. 
+These scripts demonstrate the basics required to authenticate to the Threat Response APIs. 
 
-Threat Response API endpoints require an ```Access Token``` for authentication. The process for authenticatin the the APIs is:
+Threat Response API endpoints require an ```Access Token``` for authentication. The process for authenticating to the the APIs is:
 
 1. Creat an ```API Client``` [in the portal](https://visibility.amp.cisco.com/#/settings/oauth)
 2. Use the ```API Client``` credentials to Generate an ```Access Token```
 3. Use the ```Access Token``` to authenticate to the API endpoints
 
-The ```/iroh/oauth2/token``` endpoint used to generate the ```Access Token``` uses basic auth with the ```API Client``` credentials.  
+The ```/iroh/oauth2/token``` endpoint used to generate the ```Access Token``` uses basic auth using the ```API Client``` credentials.  
 The ```Access Token``` is passed to the other endpoints as an HTTP header, eq. ```Authorization: Bearer <Access Token>```  
 The ```Access Token``` is valid for a finite amount of time. Once the token expires a new token must be generated. 
 
